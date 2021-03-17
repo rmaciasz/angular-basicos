@@ -1,0 +1,22 @@
+<p>listado works!</p>
+
+<div>
+
+    <ul>
+        <li><b>Existentes</b></li>
+        <li *ngFor="let heroe of heroes; let idx = index ">
+            {{ idx }} {{ heroe }}
+        </li>
+    </ul>
+</div>
+
+<div>
+    <ul>
+        <li><b>Borrados</b></li>
+        <li *ngFor="let borrado of borrados; let idx = index ">
+            {{ idx }} {{ borrado }}
+        </li>
+    </ul>
+</div>
+
+<button (click)="borrarHeroe()">Borrar el Primer Heroe</button>
